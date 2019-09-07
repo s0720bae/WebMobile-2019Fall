@@ -184,3 +184,9 @@ footer a:hover {
   margin-top: 250px;
   margin-right: 100px;
 }
+
+.twitter{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
