@@ -173,20 +173,22 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 .myimage{
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-
 }
-.recent{
-  position:absolute;
-  margin-top: 250px;
-  margin-right: 100px;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
-
-.twitter{
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+.square {
+  height: 75px;
+  width: 75px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px;
 }
