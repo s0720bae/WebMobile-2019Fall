@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7152eebe-fe05-4c37-9650-946ec4ab8a69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../GoogleTask/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTMLTask/Web_Lesson2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HTMLTask/Web_Lesson2/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568079558580</updated>
-      <workItem from="1568079559652" duration="239000" />
+      <workItem from="1568079559652" duration="3352000" />
     </task>
     <servers />
   </component>
