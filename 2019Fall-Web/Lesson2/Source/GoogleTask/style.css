@@ -186,6 +186,7 @@ img {
 .square {
   height: 75px;
   width: 75px;
+  padding-left: 45px;
 }
 .container{
   display: grid;
