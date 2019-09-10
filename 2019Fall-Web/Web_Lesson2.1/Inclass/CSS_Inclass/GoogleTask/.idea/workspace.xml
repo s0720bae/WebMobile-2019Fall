@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfcff223-4d1f-41da-bfe1-ba479ed19e43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Source/HTMLTask/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/.idea/GoogleTask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/instagram.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/me.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/reddit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/twitter1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/GoogleTask/youtube.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/Inclass/CSS_Inclass/ToDo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/CSS_Example/google-homepage/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/CSS_Example/google-homepage/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/basicHTML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/formRegistration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/images/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/images/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/images/img3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/images/img4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/images/img5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/images/img6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/UC-Examples/HTML_Example/tables.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Web_Lesson2/Web_Lesson2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/CSS_Example/google-homepage/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/CSS_Example/google-homepage/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/basicHTML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/formRegistration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/images/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/images/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/images/img3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/images/img4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/images/img5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/images/img6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../UC-Examples/HTML_Example/tables.html" beforeDir="false" />
-    </list>
+    <list default="true" id="cfcff223-4d1f-41da-bfe1-ba479ed19e43" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
