@@ -1,0 +1,17 @@
+h1,h3{
+    color:#BCBBBB;
+}
+
+.top right{
+    align-text:right;
+}
+.topDiv{
+    text-align: right;
+
+}
+
+my picture{
+    text-align: left;
+    float:left;
+    align-content: flex-start;
+}
