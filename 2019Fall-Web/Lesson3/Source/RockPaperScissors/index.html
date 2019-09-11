@@ -17,16 +17,12 @@
 <div class="game">
 
     <script>
-        // User choice
-        var userChoice = prompt("Do you choose rock, paper or scissors?");
+        var userChoice = prompt("Do you choose rock, paper or scissors?");      // Get user input
         if (! userChoice) {
-            // User choice was undefined
             document.write("<p>Input is unclear, please refresh and try again.</p>");
         } else {
-            // Display user choice
             document.write("<p>Player 1:" + " " + userChoice + "</p>");
         }
-        // Computer choice
         var computerChoice = Math.random();
         if (computerChoice < 0.34) {
             computerChoice = "rock";
@@ -35,19 +31,15 @@
         } else {
             computerChoice = "scissors";
         }
-        // Display computer choice
         document.write("<p>Computer:" + " " + computerChoice + "</p>");
-        // Compare user choice vs computer choice
         var compare = function(Player,Computer) {
             if (Player === Computer) {
                 return "It's a tie!";
             }
             if (Player === "rock") {
                 if (Computer === "scissors") {
-                    // rock wins
                     return "Winner winner chicken dinner!";
                 } else {
-                    // paper wins
                     return "Sorry you lost! Refresh the page to try again.";
                 }
             }
@@ -60,20 +52,15 @@
             }
             if (Player === "scissors") {
                 if (Computer === "rock") {
-                    // rock wins
                     return "Sorry you lost! Refresh the page to try again.";
                 } else {
-                    // scissors wins
                     return "Winner winner chicken dinner!";
                 }
             }
         };
-        // Run the compare function
         var results = compare(userChoice,computerChoice);
-        // Display results
         document.write("<br><hr><br>" + results);
     </script>
-
 </div>
 
 </body>
