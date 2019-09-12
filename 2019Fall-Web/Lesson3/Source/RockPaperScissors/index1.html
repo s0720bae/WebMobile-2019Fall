@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Rock Paper Scissors</title>
+    <link rel = stylesheet href ="style.css">
+</head>
+<body>
+
+<h1>JavaScript Rock Paper Scissors</h1>
+
+<div class= container>
+
+    <script>
+        var userChoice = prompt("Choose rock, paper or scissors!");      // Get user input
+        if (! userChoice) {
+            document.write("<p>Undefined choice. Refresh and try again.</p>");
+        } else {
+            document.write("<h2><p> Player 1:" + " " + userChoice + "</p></h2>");
+        }
+        var computerChoice = Math.random();
+        if (computerChoice < 0.34) {
+            computerChoice = "rock";
+        } else if(computerChoice <= 0.67) {
+            computerChoice = "paper";
+        } else {
+            computerChoice = "scissors";
+        }
+        document.write("<h2><p>Computer:" + " " + computerChoice + "</p></h2>");
+        var compare = function(Player,Computer) {
+            if (Player === Computer) {
+                return "It's a tie!";
+            }
+            if (Player === "rock") {
+                if (Computer === "scissors") {
+                    return "Winner winner chicken dinner!";
+                } else {
+                    return "Sorry you lost! Refresh the page to try again.";
+                }
+            }
+            if (Player === "paper") {
+                if (Computer === "rock") {
+                    return "Winner winner chicken dinner!";
+                } else {
+                    return "Sorry you lost! Refresh the page to try again.";
+                }
+            }
+            if (Player === "scissors") {
+                if (Computer === "rock") {
+                    return "Sorry you lost! Refresh the page to try again.";
+                } else {
+                    return "Winner winner chicken dinner!";
+                }
+            }
+        };
+        var results = compare(userChoice,computerChoice);
+        document.write("<h1><p class = result><br><br>" + results + "</p></h1>");
+    </script>
+</div>
+
+</body>
+</html>

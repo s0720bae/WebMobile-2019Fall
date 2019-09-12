@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a888d0f1-c28e-4bcc-b31e-b49d823daf1d" name="Default Changelist" comment="" />
+    <list default="true" id="a888d0f1-c28e-4bcc-b31e-b49d823daf1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Source/CSSTask/ColorGridTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Source/CSSTask/ColorGridTask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/SampleBootStrapMockup.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/SampleImages/Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/SampleImages/app1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/SampleImages/app2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/SampleImages/app3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/SampleImages/bean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/input/PlaceHolderImages/100x100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/input/PlaceHolderImages/1140x350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/input/PlaceHolderImages/555x300" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/InClassProgramming/RWD Task/input/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/UseCase/Calculator/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/UseCase/Calculator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Lesson3/UseCase/Calculator/script.js" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567882353540</updated>
       <workItem from="1567882354998" duration="3467000" />
+      <workItem from="1568263730282" duration="7000" />
     </task>
     <servers />
   </component>
@@ -51,7 +71,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
