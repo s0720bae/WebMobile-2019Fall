@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7152eebe-fe05-4c37-9650-946ec4ab8a69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Lesson3/Source/RWD Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Lesson3/Source/RWD Task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Lesson3/Source/RWD Task/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Lesson3/Source/RWD Task/input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Lesson3/Source/RockPaperScissors/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Lesson3/Source/RockPaperScissors/index1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +29,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,6 +56,7 @@
       <workItem from="1568079559652" duration="4111000" />
       <workItem from="1568161980038" duration="505000" />
       <workItem from="1568179387382" duration="164000" />
+      <workItem from="1568338158135" duration="409000" />
     </task>
     <servers />
   </component>

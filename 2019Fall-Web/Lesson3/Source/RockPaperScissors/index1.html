@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <!-- Title -->
     <title>Rock Paper Scissors</title>
     <link rel = stylesheet href ="style.css">
 </head>
 <body>
 
-<h1>JavaScript Rock Paper Scissors</h1>
+<h1>JavaScript </h1>
+
+<h1>Rock Paper Scissors</h1>
 
 <div class= container>
 
     <script>
-        var userChoice = prompt("Choose rock, paper or scissors!");      // Get user input
-        if (! userChoice) {
+        var userInput = prompt("Choose rock, paper or scissors!");                         // Get user input
+        if (! userInput) {
             document.write("<p>Undefined choice. Refresh and try again.</p>");
         } else {
-            document.write("<h2><p> Player 1:" + " " + userChoice + "</p></h2>");
+            document.write("<h2><p> Player 1:" + " " + userInput + "</p></h2>");          // Output user input
         }
-        var computerChoice = Math.random();
+        var computerChoice = Math.random();                                                // Get computer input
         if (computerChoice < 0.34) {
             computerChoice = "rock";
         } else if(computerChoice <= 0.67) {
@@ -26,26 +28,26 @@
         } else {
             computerChoice = "scissors";
         }
-        document.write("<h2><p>Computer:" + " " + computerChoice + "</p></h2>");
-        var compare = function(Player,Computer) {
-            if (Player === Computer) {
+        document.write("<h2><p>Computer:" + " " + computerChoice + "</p></h2>");           // Output computer input
+        var check = function(User,Computer) {                                            // Check who won
+            if (User === Computer) {
                 return "It's a tie!";
             }
-            if (Player === "rock") {
+            if (User === "rock") {
                 if (Computer === "scissors") {
                     return "Winner winner chicken dinner!";
                 } else {
                     return "Sorry you lost! Refresh the page to try again.";
                 }
             }
-            if (Player === "paper") {
+            if (User === "paper") {
                 if (Computer === "rock") {
                     return "Winner winner chicken dinner!";
                 } else {
                     return "Sorry you lost! Refresh the page to try again.";
                 }
             }
-            if (Player === "scissors") {
+            if (User === "scissors") {
                 if (Computer === "rock") {
                     return "Sorry you lost! Refresh the page to try again.";
                 } else {
@@ -53,8 +55,8 @@
                 }
             }
         };
-        var results = compare(userChoice,computerChoice);
-        document.write("<h1><p class = result><br><br>" + results + "</p></h1>");
+        var winner = check(userInput,computerChoice);
+        document.write("<h1><p class = result><br><br>" + winner + "</p></h1>");        // Output the results
     </script>
 </div>
 

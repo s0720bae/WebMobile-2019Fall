@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a2e337-36b0-4531-8f03-4057f205b7ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Lesson2/Source/CSSTask/ColorGridTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Lesson2/Source/CSSTask/ColorGridTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleImages/Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleImages/app1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleImages/app2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleImages/app3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleImages/bean.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/input/input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RockPaperScissors/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../RockPaperScissors/index1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +57,8 @@
       <option name="presentableId" value="Default" />
       <updated>1568232437585</updated>
       <workItem from="1568232438760" duration="11210000" />
+      <workItem from="1568301275155" duration="286000" />
+      <workItem from="1568311195809" duration="2053000" />
     </task>
     <servers />
   </component>
@@ -74,7 +70,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
