@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+</head>
+<body>
+<div class=container>
+
+  <div class="maindisplay">
+    <div class="subdisplay">
+      {{subText}}
+    </div>
+    {{mainText}}
+  </div>
+
+  <div class="keypad">
+    <div class=row>
+      <div (click)="pressKey('1')" class="keys numkey one-line">1</div>
+      <div (click)="pressKey('2')" class="keys numkey one-line">2</div>
+      <div (click)="pressKey('3')" class="keys numkey one-line">3</div>
+      <div (click)="pressKey('/')" class="keys opkey one-line">/</div>
+    </div>
+    <div class=row>
+      <div (click)="pressKey('4')" class="keys numkey one-line">4</div>
+      <div (click)="pressKey('5')" class="keys numkey one-line">5</div>
+      <div (click)="pressKey('6')" class="keys numkey one-line">6</div>
+      <div (click)="pressKey('x')" class="keys opkey one-line">x</div>
+    </div>
+    <div class=row>
+      <div (click)="pressKey('7')" class="keys numkey one-line">7</div>
+      <div (click)="pressKey('8')" class="keys numkey one-line">8</div>
+      <div (click)="pressKey('9')" class="keys numkey one-line">9</div>
+      <div (click)="pressKey('+')" class="keys opkey one-line">+</div>
+    </div>
+    <div class=row>
+      <div (click)="pressKey('0')" class="keys numkey zerokey one-line">0</div>
+      <div (click)="pressKey('.')" class="keys numkey one-line">.</div>
+      <div (click)="getAnswer()" class="keys equalkey one-line">=</div>
+      <div (click)="pressKey('-')" class="keys opkey one-line">-</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
