@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MobileICP1</string>
+    <string name="login">Login</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="enter_your_password_here">Enter your password here</string>
+    <string name="enter_your_username_here">Enter your username here</string>
+    <string name="enter_username_here">Enter username here</string>
+    <string name="welcome_to_home_screen">Welcome To Home Screen</string>
+    <string name="logout">Logout</string>
+    <string name="androidlogo">AndroidLogo</string>
+</resources>
