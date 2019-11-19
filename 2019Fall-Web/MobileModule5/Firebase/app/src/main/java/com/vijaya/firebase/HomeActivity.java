@@ -103,7 +103,6 @@ public class HomeActivity extends AppCompatActivity {
 
     private void logout(){
 
-        //This firebase will be call when there is changes in firebase user session
 
         FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -112,13 +111,11 @@ public class HomeActivity extends AppCompatActivity {
 
                 if(currentUser == null){
 
-                    //user auth state change - user is null
                     startActivity(new Intent(HomeActivity.this, LoginActivity.class));
                     finish();
                 }
             }
         };
-        // Sign user out through AuthStateListener
         Auth.addAuthStateListener(authStateListener);
         Auth.signOut();
     }
