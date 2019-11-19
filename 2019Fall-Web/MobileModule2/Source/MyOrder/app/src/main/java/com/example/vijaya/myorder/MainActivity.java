@@ -165,8 +165,8 @@ public class MainActivity extends AppCompatActivity {
     public void sendEmail(View view) {
         Log.i("Send email", "");
 
-        String[] TO = {"this417sucks@gmail.com"};
-        String[] CC = {"s0720bae@gmail.com"};
+        String[] TO = {"mikesolo470@gmail.com"};
+        String[] CC = {"mikesolo470@gmail.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
 
         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
         emailIntent.putExtra(Intent.EXTRA_CC, CC);
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Daniel's Order");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Michael's Order");
         Intent summaryIntent = new Intent(MainActivity.this, SummarActivity.class);
         // get user input
         EditText userInputNameView = (EditText) findViewById(R.id.user_input);

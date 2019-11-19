@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47a2e337-36b0-4531-8f03-4057f205b7ef" name="Default Changelist" comment="" />
+    <list default="true" id="47a2e337-36b0-4531-8f03-4057f205b7ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/app/src/main/java/com/example/vijaya/myorder/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MobileModule2/Source/MyOrder/app/src/main/java/com/example/vijaya/myorder/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,9 @@
       <workItem from="1568311195809" duration="2053000" />
       <workItem from="1568352116684" duration="487000" />
       <workItem from="1571540420249" duration="63000" />
+      <workItem from="1572630307709" duration="35000" />
+      <workItem from="1572824271886" duration="4000" />
+      <workItem from="1573236385487" duration="15000" />
     </task>
     <servers />
   </component>
