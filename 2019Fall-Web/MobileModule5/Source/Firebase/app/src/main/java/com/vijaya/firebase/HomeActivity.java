@@ -3,12 +3,14 @@ package com.vijaya.firebase;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,171 +21,124 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class HomeActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
+    private FirebaseAuth mauth;
+    ViewPager mviewPager;
+    MyFragmentPageAdapter mFragmentPagerAdapter;
+    TableLayout mtabLayout;
+    DatabaseReference mDatabaseReference;
 
-    private static final String TAG = HomeActivity.class.getSimpleName();
-    private TextView txtDetails;
-    private EditText inputName, inputPhone;
-    private Button btnSave;
-    private Button btnLogout;
-    private DatabaseReference mFirebaseDatabase;
-    private FirebaseDatabase mFirebaseInstance;
-    private FirebaseAuth Auth;
-
-    private String userId;
-
+    //Toolbar mtoolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main);
+        mauth=FirebaseAuth.getInstance();
 
-        // Displaying toolbar icon
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        mviewPager=(ViewPager)findViewById(R.id.viewPager);
 
-        txtDetails = (TextView) findViewById(R.id.txt_user);
-        inputName = (EditText) findViewById(R.id.name);
-        inputPhone = (EditText) findViewById(R.id.phone);
-        btnSave = (Button) findViewById(R.id.btn_save);
-        btnLogout = (Button)findViewById(R.id.btn_logout);
-        mFirebaseInstance = FirebaseDatabase.getInstance();
-        Auth = FirebaseAuth.getInstance();
+        //---ADDING ADAPTER FOR FRAGMENTS IN VIEW PAGER----
+        mFragmentPagerAdapter=new MyFragmentPagerAdapter(getSupportFragmentManager());
+        mviewPager.setAdapter(mFragmentPagerAdapter);
 
+        //---SETTING TAB LAYOUT WITH VIEW PAGER
+        mtabLayout=(TabLayout)findViewById(R.id.tabLayout);
+        mtabLayout.setupWithViewPager(mviewPager);
 
-        // get reference to 'users' node
-        mFirebaseDatabase = mFirebaseInstance.getReference("users");
-
-        // store app title to 'app_title' node
-        mFirebaseInstance.getReference("app_title").setValue("Realtime Database");
-
-        // app_title change listener
-        mFirebaseInstance.getReference("app_title").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.e(TAG, "App title updated");
-
-                String appTitle = dataSnapshot.getValue(String.class);
-
-                // update toolbar title
-                getSupportActionBar().setTitle(appTitle);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.e(TAG, "Failed to read app title value.", error.toException());
-            }
-        });
-
-        // Save / update the user
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String name = inputName.getText().toString();
-                String phone = inputPhone.getText().toString();
-
-                // Check for already existed userId
-                if (TextUtils.isEmpty(userId)) {
-                    createUser(name, phone);
-                } else {
-                    updateUser(name, phone);
-                }
-            }
-        });
-
-        btnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                logout();
-            }
-        });
-
-        toggleButton();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("users");
     }
 
-    private void logout(){
+    //----SHOWING ALERT DIALOG FOR EXITING THE APP----
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("Really Exit ??");
+        builder.setTitle("Exit");
+        builder.setCancelable(false);
+        builder.setPositiveButton("Ok",new MainActivity.MyListener());
+        builder.setNegativeButton("Cancel",null);
+        builder.show();
 
-
-        FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser currentUser = firebaseAuth.getCurrentUser();
-
-                if(currentUser == null){
-
-                    startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-                    finish();
-                }
-            }
-        };
-        Auth.addAuthStateListener(authStateListener);
-        Auth.signOut();
     }
+    public class MyListener implements DialogInterface.OnClickListener{
 
-    // Changing button text
-    private void toggleButton() {
-        if (TextUtils.isEmpty(userId)) {
-            btnSave.setText("Save");
-        } else {
-            btnSave.setText("Update");
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            finish();
         }
     }
 
-    /**
-     * Creating new user node under 'users'
-     */
-    private void createUser(String name, String phone) {
-        // TODO
-        // In real apps this userId should be fetched
-        // by implementing firebase auth
-        if (TextUtils.isEmpty(userId)) {
-            userId = mFirebaseDatabase.push().getKey();
+    //---IF USER IS NULL , THEN GOTO LOGIN PAGE----
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user=mauth.getCurrentUser();
+        if(user==null){
+            startfn();
         }
-        User user = new User(name, phone);
-        mFirebaseDatabase.child(userId).setValue(user);
-        addUserChangeListener();
+        else{
+            //---IF LOGIN , ADD ONLINE VALUE TO TRUE---
+            mDatabaseReference.child(user.getUid()).child("online").setValue("true");
+
+        }
     }
 
-    /**
-     * User data change listener
-     */
-    private void addUserChangeListener() {
-        // User data change listener
-        mFirebaseDatabase.child(userId).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                User user = dataSnapshot.getValue(User.class);
+    @Override
+    protected void onStop() {
+        super.onStop();
 
-                // Check for null
-                if (user == null) {
-                    Log.e(TAG, "User data is null!");
-                    return;
+     /* //-----for disabling online function when appliction runs in background----
+        FirebaseUser user=mauth.getCurrentUser();
+        if(user!=null){
+            mDatabaseReference.child(user.getUid()).child("online").setValue(ServerValue.TIMESTAMP);
+        }
+        */
+    }
+
+    //---CREATING OPTION MENU---
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+        if(item.getItemId()==R.id.settings){
+            Intent intent=new Intent(MainActivity.this,SettingActivity.class);
+            startActivity(intent);
+        }
+        if(item.getItemId()==R.id.allUsers){
+            Intent intent=new Intent(MainActivity.this,UserActivity.class);
+            startActivity(intent);
+        }
+
+        //---LOGGING OUT AND ADDING TIME_STAMP----
+        if(item.getItemId()==R.id.logout){
+            mDatabaseReference.child(mauth.getCurrentUser().getUid()).child("online").setValue(ServerValue.TIMESTAMP).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if(task.isSuccessful()){
+
+                        FirebaseAuth.getInstance().signOut();
+                        startfn();
+                    }
+                    else{
+                        Toast.makeText(MainActivity.this, "Try again..", Toast.LENGTH_SHORT).show();
+                    }
                 }
-                Log.e(TAG, "User data is changed!" + user.name + ", " + user.phone);
-
-                // Display newly updated name and phone
-                txtDetails.setText(user.name + ", " + user.phone);
-
-                // clear edit text
-                inputName.setText("");
-                inputPhone.setText("");
-                toggleButton();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.e(TAG, "Failed to read user", error.toException());
-            }
-        });
+            });
+        }
+        return true;
     }
 
-    private void updateUser(String name, String phone) {
-        // updating the user via child nodes
-        if (!TextUtils.isEmpty(name))
-            mFirebaseDatabase.child(userId).child("name").setValue(name);
-
-        if (!TextUtils.isEmpty(phone))
-            mFirebaseDatabase.child(userId).child("phone").setValue(phone);
+    //--OPENING LOGIN ACTIVITY--
+    private void startfn(){
+        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
