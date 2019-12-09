@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/start"
     tools:context=".StartActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chatting App!"
-        android:textColor="@color/colorPrimaryDark"
+        android:text="CS 490 Chatting App!"
+        android:textColor="#D800FF"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="200dp"
         />
 
     <Button
@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/login"
         android:text="sign in"
+        android:layout_marginTop="150dp"
         android:background="@color/colorPrimaryDark"
         android:textColor="#ffff00"
         android:layout_marginBottom="10dp"
