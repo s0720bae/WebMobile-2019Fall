@@ -12,9 +12,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CS 490 Chatting App!"
+        android:text="ChatsLab!"
+        android:textAlignment="center"
         android:textColor="#D800FF"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginBottom="200dp"
         />
